@@ -1,0 +1,13 @@
+.select-card{
+    display: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: .25rem;
+    box-shadow: 0 0 5px 2px gray;
+    background-color: bisque;
+    height: 150px;
+    width: 150px;
+    margin-top: .25rem;
+    padding-left: .25rem;
+}
