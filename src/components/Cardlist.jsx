@@ -1,14 +1,15 @@
 import React from 'react'
-import EverythingCard from './SelectCard'
+import SelectCard from './SelectCard'
 
-function Cardlist({ characardClass }) {
+export default function Cardlist({ characardClass }) {
   return (
+    //using a .map method to cycle through the array of objects to create a new array of SelectCards with character data passed through from App.
     <div className="card-grid">
         {characardClass.map(charaCard =>{
-            return <EverythingCard character={charaCard} key={charaCard.id} />
+            return <SelectCard character={charaCard} key={charaCard.id} />
         })}
     </div>
   )
 }
 
-export default Cardlist
+ 

@@ -1,9 +1,10 @@
 import React from 'react'
 
-function SelectCard({ character }) {
+export default function SelectCard({ character }) {
   return (
-    <div>SelectCard</div>
+    <>
+    <div><input type='checkbox'/>{character.Character_Name}</div>
+    </>
   )
 }
 
-export default EverythingCard

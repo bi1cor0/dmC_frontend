@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Cardlist from './components/Cardlist'
-import EverythingCard from './components/SelectCard'
 
 //Creating a sample card for character data first before bringing in the data
 //from the backend to deal with logic first to see if everything works from the front end.
