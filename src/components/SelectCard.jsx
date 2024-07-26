@@ -1,8 +1,8 @@
 import React from 'react'
 
-function EverythingCard() {
+function SelectCard({ character }) {
   return (
-    <div>EverythingCard</div>
+    <div>SelectCard</div>
   )
 }
 
