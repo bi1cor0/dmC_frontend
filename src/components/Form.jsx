@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 export default function Form() {
     const [formData, setFormData] = useState({
-        name: "",
-        class: ""
+        Player_Name: "",
+        Character_Name: "",
+        Class: "",
+        Race: "",
+        Level: "",
+        Health_Points: "",
+        Alive: "",
+        Initiative: "",
       });
     
       function handleChange(e){
@@ -16,7 +23,7 @@ export default function Form() {
         try {
           let res = await axios({
             method: 'POST',
-            url: '',
+            url: 'http://localhost:4000/characters',
             data: formData
           })
         } catch (err) {
@@ -26,9 +33,25 @@ export default function Form() {
     
 
   return (
-    <form onSubmit={handleSubmit}>
-    <input onChange={handleChange} name={'name'} type="text" />
-    <input onChange={handleChange} name={'class'} type="text" />
+  <form onSubmit={handleSubmit}>
+    <label>Player's Name: </label>
+    <input onChange={handleChange} name={'Player_Name'} type="text" required/> <br></br>
+    <label>Character Name: </label>
+    <input onChange={handleChange} name={'Character_Name'} type="text" required/> <br></br>
+    <label>Character's Class: </label>
+    <input onChange={handleChange} name={'Class'} type="text" required/><br></br>
+    <label>Character's Race: </label>
+    <input onChange={handleChange} name={'Race'} type="text" required/><br></br>
+    <label>Character's Level: </label>
+    <input onChange={handleChange} name={'Level'} type="number" min="1" max="20" required/><br></br>
+    <label>Character's HP: </label>
+    <input onChange={handleChange} name={'Health_Points'} type="number" min="5" required/><br></br>
+    <label>Is the Character Alive?: </label>
+    <input onChange={handleChange} name={'Alive'} type="text" required/><br></br>
+    <label>Character's Initiative: </label>
+    <input onChange={handleChange} name={'Initiative'} type="text" required/><br></br>
+    <input type="submit" value="Submit"/>
+
   </form>  
   )
 }
