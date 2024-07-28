@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Route, Routes, useNavigate } from 'react-router-dom'; //importing methods from react-router-dom
 import Cardlist from './components/Cardlist'
 import axios from 'axios'
 import './App.css'
@@ -9,8 +10,12 @@ function App() {
 
   useEffect(() => {
     async function getData(){
-    let res = await axios.get(`http://localhost:4000/characters`)
-    setCharcterCard(res.data)
+    try{
+      let res = await axios.get(`http://localhost:4000/characters`)
+      setCharcterCard(res.data)
+    } catch(err){
+      console.error("Cannot load data due to: " +err)
+    }
     }
     getData();
   }, [])
