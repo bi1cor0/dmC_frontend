@@ -8,6 +8,7 @@ export default function SelectCard({ character }) {
       <div>{character.Class}</div>
       <div>Level: {character.Level}</div>
       <div>HP: {character.Health_Points}</div>
+      <div>Player Name: {character.Player_Name}</div>
     </div>
     </>
   )

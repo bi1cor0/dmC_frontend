@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Form from '../components/Form';
 
 
 function AddCharacter() {
@@ -12,6 +13,7 @@ function AddCharacter() {
   return (
     <>
     <h1>Add a Character Here</h1>
+    <Form />
     <button onClick={btnBack}>Back to the Main Page</button>
 
     </>
