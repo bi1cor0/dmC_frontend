@@ -4,12 +4,12 @@ import Cardlist from './components/Cardlist'
 import AddCharacter from './pages/AddCharacter';
 import DeleteCharacters from './pages/DeleteCharacters';
 import UpdateCharacters from './pages/UpdateCharacters';
-import Nav from './components/Navbar';
+import Nav from './components/Navbar'; //importing navigation bar from the components which house all my links. 
 import axios from 'axios'
 import './App.css'
 
 
-function App() {
+export default function App() {
   const [characterCard, setCharcterCard] = useState()//setting state of a character card by pass through the array of objs var
 
   useEffect(() => {
@@ -33,8 +33,8 @@ function App() {
               <h1>Welcome to the Select Card Page</h1>
               {characterCard && <Cardlist characardClass={characterCard} /> /*Using a && to help with rendering a promise. 
               The characterCard state isn't loading fully and the && will check to see if the state is true before rendering.*/}
-                <Nav />
-          </>
+                <Nav /> 
+          </> //rendering the nav bar in the main page path only since I just want it to exist in main path. 
       }></Route>
       <Route path='/add' element={<AddCharacter />}></Route>
       <Route path='/update' element={<UpdateCharacters />}></Route>
@@ -46,5 +46,3 @@ function App() {
   )
 }
 
-
-export default App
