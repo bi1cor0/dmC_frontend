@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'; //importing methods from react-router-dom
 import Cardlist from './components/Cardlist'
+import Card from './components/CardsA'; //importing a specific Card component to the main page app to pass as props in the Cardlist component. 
 import AddCharacter from './pages/AddCharacter';
 import DeleteCharacters from './pages/DeleteCharacters';
 import UpdateCharacters from './pages/UpdateCharacters';
@@ -32,7 +33,7 @@ export default function App() {
       <Route path='/' element={
           <>
               <h1>Welcome to the Select Card Page</h1>
-              {characterCard && <Cardlist characardClass={characterCard} /> /*Using a && to help with rendering a promise. 
+              {characterCard && <Cardlist characardClass={characterCard} CardVariant={Card}/> /*Using a && to help with rendering a promise. 
               The characterCard state isn't loading fully and the && will check to see if the state is true before rendering.*/}
                 <Nav /> 
           </> //rendering the nav bar in the main page path only since I just want it to exist in main path. 

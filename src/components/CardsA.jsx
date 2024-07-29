@@ -1,6 +1,6 @@
 import React from 'react'
-
-export default function SelectCard({ character }) {
+//Card component A which is for rendering character cards on the main page. 
+export default function Card({ character }) {
 
   return (
     <>
