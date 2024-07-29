@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'; //importing methods from react-router-dom
 import Cardlist from './components/Cardlist'
-import Card from './components/CardsA'; //importing a specific Card component to the main page app to pass as props in the Cardlist component. 
+import Card from './components/CardDisplay'; //importing a specific Card component to the main page app to pass as props in the Cardlist component. 
 import AddCharacter from './pages/AddCharacter';
 import DeleteCharacters from './pages/DeleteCharacters';
 import UpdateCharacters from './pages/UpdateCharacters';

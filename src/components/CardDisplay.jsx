@@ -1,5 +1,5 @@
 import React from 'react'
-//Card component A which is for rendering character cards on the main page. 
+//Card component which is for rendering character cards on the main page called Card Display. 
 export default function Card({ character }) {
 
   return (
