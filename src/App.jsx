@@ -33,7 +33,7 @@ export default function App() {
     <Routes>
       <Route path='/' element={
           <>
-              <h1>Welcome to the Select Card Page</h1>
+              <h1>Welcome to the Select Character Page</h1>
               {characterCard && <Cardlist characardClass={characterCard} CardVariant={Card}/> /*Using a && to help with rendering a promise. 
               The characterCard state isn't loading fully and the && will check to see if the state is true before rendering.*/}
                 <Nav /> 

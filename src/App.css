@@ -23,6 +23,17 @@
         padding: 1rem;
 }
 
+.battle-card{
+    display: column;
+    align-content: center;
+    text-align: center;
+    border-radius: .25rem;
+    box-shadow: 0 0 5px 2px gray;
+    background-color: skyblue;
+    margin: 1rem;
+    padding: 1rem;
+}
+
 .card-grid{
     justify-content: space-evenly;
     display: flex;
