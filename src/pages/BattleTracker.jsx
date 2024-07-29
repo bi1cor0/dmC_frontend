@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Cardlist from '../components/Cardlist';
 import Card from '../components/CardBattle';
+import MonCard from '../components/CardMonster'
 import axios from 'axios'
 
 export default function BattleTracker() {
@@ -41,7 +42,7 @@ export default function BattleTracker() {
     <>
     <h1>Battle Tracker Page</h1>
     {characterCard && <Cardlist characardClass={characterCard} CardVariant={Card}/> }
-    <Card character={ monsterCard }/>
+    {monsterCard && <MonCard monster={monsterCard}/> }
     <button onClick={btnBack}>Back to the Main Page</button>
     </>
   )
