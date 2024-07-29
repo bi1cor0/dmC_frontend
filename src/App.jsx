@@ -9,6 +9,7 @@ import axios from 'axios'
 import './App.css'
 
 
+
 export default function App() {
   const [characterCard, setCharcterCard] = useState()//setting state of a character card by pass through the array of objs var
 

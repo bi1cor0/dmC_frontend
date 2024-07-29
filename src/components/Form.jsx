@@ -33,7 +33,7 @@ export default function Form() {
     
 
   return (
-  <form onSubmit={handleSubmit}>
+  <form className='create-form' onSubmit={handleSubmit}>
     <label>Player's Name: </label>
     <input onChange={handleChange} name={'Player_Name'} type="text" required/> <br></br>
     <label>Character Name: </label>
@@ -49,7 +49,7 @@ export default function Form() {
     <label>Is the Character Alive?: </label>
     <input onChange={handleChange} name={'Alive'} type="text" required/><br></br>
     <label>Character's Initiative: </label>
-    <input onChange={handleChange} name={'Initiative'} type="text" required/><br></br>
+    <input onChange={handleChange} name={'Initiative'} type="number" min="5" max="40" required/><br></br>
     <input type="submit" value="Submit"/>
 
   </form>  
