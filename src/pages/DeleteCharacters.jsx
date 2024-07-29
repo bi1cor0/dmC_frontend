@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Cardlist from '../components/Cardlist';
-import Card from '../components/CardDisplay';
+import Card from '../components/CardDelete';
 import axios from 'axios'
 
 
@@ -29,7 +29,7 @@ export default function UpdateCharacters() {
 
   return (
     <>
-    <h1>Delete some of the Characters</h1>
+    <h1>Delete Some of the Characters</h1>
     {characterCard && <Cardlist characardClass={characterCard} CardVariant={Card}/> }
     <button onClick={btnBack}>Back to the Main Page</button>
     </>
