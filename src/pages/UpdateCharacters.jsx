@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Cardlist from '../components/Cardlist';
-import Card from '../components/CardDisplay';
+import Card from '../components/CardUpdate';
 import axios from 'axios'
 
 

@@ -47,7 +47,7 @@ export default function Form() {
     <label>Character's HP: </label>
     <input onChange={handleChange} name={'Health_Points'} type="number" min="5" required/><br></br>
     <label>Is the Character Alive?: </label>
-    <input onChange={handleChange} name={'Alive'} type="text" required/><br></br>
+    <input onChange={handleChange} name={'Alive'} type="text" placeholder={'True or False'} required/><br></br>
     <label>Character's Initiative: </label>
     <input onChange={handleChange} name={'Initiative'} type="number" min="5" max="40" required/><br></br>
     <input type="submit" value="Submit"/>
