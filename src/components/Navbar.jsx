@@ -12,6 +12,9 @@ export default function Nav (props) {
       <Link to="/delete">
         <button>DELETE CHARACTERS</button>
       </Link>
+      <Link to="/battlestart">
+        <button>START BATTLE</button>
+      </Link>
     </div>
   );
 }

@@ -25,7 +25,8 @@
 
 .card-grid{
     justify-content: space-evenly;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .create-form{

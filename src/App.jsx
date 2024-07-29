@@ -5,6 +5,7 @@ import Card from './components/CardDisplay'; //importing a specific Card compone
 import AddCharacter from './pages/AddCharacter';
 import DeleteCharacters from './pages/DeleteCharacters';
 import UpdateCharacters from './pages/UpdateCharacters';
+import BattleTracker from './pages/BattleTracker';
 import Nav from './components/Navbar'; //importing navigation bar from the components which house all my links. 
 import axios from 'axios'
 import './App.css'
@@ -41,6 +42,7 @@ export default function App() {
       <Route path='/add' element={<AddCharacter />}></Route>
       <Route path='/update' element={<UpdateCharacters />}></Route>
       <Route path='/delete' element={<DeleteCharacters />}></Route>
+      <Route path='/battlestart' element={<BattleTracker />}></Route>
     </Routes>
 
     </>
