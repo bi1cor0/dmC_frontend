@@ -26,6 +26,8 @@ export default function Form() {
             url: 'http://localhost:4000/characters',
             data: formData
           })
+          alert("Character has been created!")
+          window.location.reload()
         } catch (err) {
           console.error(err)
         }
@@ -35,7 +37,7 @@ export default function Form() {
   return (
   <form className='create-form' onSubmit={handleSubmit}>
     <label>Player's Name: </label>
-    <input onChange={handleChange} name={'Player_Name'} type="text" required/> <br></br>
+    <input onChange={handleChange}  name={'Player_Name'} type="text" required/> <br></br>
     <label>Character Name: </label>
     <input onChange={handleChange} name={'Character_Name'} type="text" required/> <br></br>
     <label>Character's Class: </label>

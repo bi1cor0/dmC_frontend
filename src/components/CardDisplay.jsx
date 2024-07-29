@@ -7,6 +7,7 @@ export default function Card({ character }) {
     <div className='select-card' >
       <div>{character.Character_Name}</div>
       <div>{character.Class}</div>
+      <div>{character.Race}</div>
       <div>Level: {character.Level}</div>
       <div>HP: {character.Health_Points}</div>
       <div>Player Name: {character.Player_Name}</div>
