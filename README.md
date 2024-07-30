@@ -8,24 +8,24 @@ This is the frontend portion of the application. Taking the character data from 
 
 ## Functionality of Pages
 
--Select Character Page
-    -Allows for the display and read of the API data in card form. 
--Add New Character Page
-    -Allows user to add new data in the API, and therefore the application. 
--Update Characters Page
-    -Allows user to update each entry in the API based on which key value needs to be changed. Changes can only be done one character at a time. 
--Delete Characters Page
-    -Allows user to delete each entry in the API, and therefore the application. 
--Battle Page
-    -Displays all character data in card form with their HP and name highlighted. This also generates a monster randomly with it's name and HP also highlighted. This simulates a battle between players and a boss monster. 
+- Select Character Page
+    - Allows for the display and read of the API data in card form. 
+- Add New Character Page
+    - Allows user to add new data in the API, and therefore the application. 
+- Update Characters Page
+    - Allows user to update each entry in the API based on which key value needs to be changed. Changes can only be done one character at a time. 
+- Delete Characters Page
+    - Allows user to delete each entry in the API, and therefore the application. 
+- Battle Page
+    - Displays all character data in card form with their HP and name highlighted. This also generates a monster randomly with it's name and HP also highlighted. This simulates a battle between players and a boss monster. 
 
 I also added functionality to the battle screen to toggle each character's health. Whenever an increment or decrement button is pushed, the health is either drained or added on to. I used useReducer for this, but based my code for this increment functionality only, off of a sample useReducer lesson found in this code sandbox:
 https://codesandbox.io/s/counter-with-usereducer-and-payload-kb703o?from-embed=&file=/src/App.js:582-956
 
 ## Future Goals
--Initiative tracker that organizes the battle screen's character cards based on turn order. 
--A database for maps and a selector for the maps used in encounters. 
--An option to choose different types of enemies from the D&D 5e API. 
--A 'cart'-like selection tool that selects specific characters/maps and/or enemies and shift them over to the battle screen. Instead of rendering every existing character card in the API and randomly generating a monster from the API; users should pick and choosse which adventurers can come along during the session. As well as storing new adventurers to be selected for future use. 
+- Initiative tracker that organizes the battle screen's character cards based on turn order. 
+- A database for maps and a selector for the maps used in encounters. 
+- An option to choose different types of enemies from the D&D 5e API. 
+- A 'cart'-like selection tool that selects specific characters/maps and/or enemies and shift them over to the battle screen. Instead of rendering every existing character card in the API and randomly generating a monster from the API; users should pick and choosse which adventurers can come along during the session. As well as storing new adventurers to be selected for future use. 
 
 API used: https://www.dnd5eapi.co/
