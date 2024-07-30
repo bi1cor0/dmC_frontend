@@ -1,4 +1,15 @@
+h1{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+body{
+    background-color: rgb(233, 226, 226);
+}
+
+.select-card, .update-card, .monster-card, .battle-card{
+    font-family:monospace;
+}
 .select-card{
     display: column;
     align-content: center;
@@ -46,11 +57,24 @@
     padding: 1rem;
 }
 
-.navBtn, .battleStart{
+.navBtn, .battleStart, .backbtn{
     box-shadow: none;
     background-color: white;
     border-radius: .25rem;
     padding: 1rem;
+    font-weight: 900;
+}
+
+.navBtn{
+    border-color: blue;
+    color: blue;
+}
+
+.battleStart{
+    margin-left: 25%;
+    position: relative;
+    border-color: red;
+    color: red;
 }
 
 .card-grid{

@@ -31,7 +31,7 @@ export default function UpdateCharacters() {
     <>
     <h1>Update the Characters</h1>
     {characterCard && <Cardlist characardClass={characterCard} CardVariant={Card}/> }
-    <button onClick={btnBack}>Back to the Main Page</button>
+    <button className='backbtn' onClick={btnBack}>Back to the Main Page</button>
     </>
   )
 }

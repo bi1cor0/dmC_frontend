@@ -14,7 +14,7 @@ function AddCharacter() {
     <>
     <h1>Add a Character Here</h1>
     <Form />
-    <button onClick={btnBack}>Back to the Main Page</button>
+    <button className='backbtn' onClick={btnBack}>Back to the Main Page</button>
 
     </>
   )

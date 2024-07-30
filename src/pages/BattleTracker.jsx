@@ -63,7 +63,7 @@ export default function BattleTracker() {
     <h1>Battle Tracker Page</h1>
     {characterCard && <Cardlist characardClass={characterCard} CardVariant={Card}/> }
     {monsterCard && <MonCard monster={monsterCard}/> }
-    <button onClick={btnBack}>Back to the Main Page</button>
+    <button className='backbtn' onClick={btnBack}>Back to the Main Page</button>
     </>
   )
 }
