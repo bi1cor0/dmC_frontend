@@ -19,7 +19,7 @@ This is the frontend portion of the application. Taking the character data from 
 -Battle Page
     -Displays all character data in card form with their HP and name highlighted. This also generates a monster randomly with it's name and HP also highlighted. This simulates a battle between players and a boss monster. 
 
-I also added functionality to the battle screen to toggle each character's health. Whenever an increment or decrement button is pushed, the health is either drained or added on to. I used useReducer for this, but based my code off of a sample useReducer lesson found in this code sandbox:
+I also added functionality to the battle screen to toggle each character's health. Whenever an increment or decrement button is pushed, the health is either drained or added on to. I used useReducer for this, but based my code for this increment functionality only, off of a sample useReducer lesson found in this code sandbox:
 https://codesandbox.io/s/counter-with-usereducer-and-payload-kb703o?from-embed=&file=/src/App.js:582-956
 
 ## Future Goals
