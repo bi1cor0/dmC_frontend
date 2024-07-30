@@ -5,15 +5,19 @@ export default function Card({ character }) {
 
     async function handleSubmit(e){
         e.preventDefault()
+        if (window.confirm("Do you really want to delete this character?")) {
+
        try {
           let res = await axios({
             method: 'DELETE',
             url: `http://localhost:4000/characters/${character._id}`,
           })
+          alert(`${character.Character_Name} has been deleted!`)
+          window.location.reload()
         } catch (err) {
           console.error(err)
         }
-      }
+      }}
 
   return (
     <>

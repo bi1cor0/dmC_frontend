@@ -17,6 +17,8 @@ export default function Card({ character }) {
         url: `http://localhost:4000/characters/${character._id}`,
         data: formData
       })
+      alert(`${character.Character_Name} has been updated!`)
+      window.location.reload()
     } catch (err) {
       console.error(err)
     }
