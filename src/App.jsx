@@ -22,7 +22,6 @@ export default function App() {
       setCharcterCard(res.data)
     } catch(err){
       console.error("Cannot load data due to: " +err)
-      return (<><h4>No data to show!</h4> </>)
     }
     }
     getData();

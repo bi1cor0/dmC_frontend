@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-
+//Form for adding new characters to the backend and into the frontend. 
 export default function Form() {
     const [formData, setFormData] = useState({
         Player_Name: "",
